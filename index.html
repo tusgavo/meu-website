@@ -14,7 +14,7 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="title">Gustavo de Oliveira Santos</h1>
+      <h1 class="title glitch_intro">Gustavo de Oliveira Santos</h1>
       <p class="description">
         Developer Front-End Junior&nbsp;&bull;&nbsp;Internet Computer Student at
         <a href="https://www.fiec.com.br/"><img src="images/fiec.png" /></a>
@@ -25,7 +25,9 @@
           ><li class="icons">
             <img src="images/icone-twitter.svg" alt="ícone-do-twitter" /></li
         ></a>
-        <a href="https://www.linkedin.com/in/gustavo-de-oliveira-santos-22b0b4195/" target="_blank"
+        <a
+          href="https://www.linkedin.com/in/gustavo-de-oliveira-santos-22b0b4195/"
+          target="_blank"
           ><li class="icons">
             <img src="images/icone-linkedin.svg" alt="ícone-do-linkedin" /></li
         ></a>
@@ -35,5 +37,15 @@
         ></a>
       </ul>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+    <script>
+      const text = baffle(".glitch_intro");
+      text.set({
+        characters: "█▓█ ▒░/▒░ █░▒▓/ █▒▒ ▓▒▓/█ ░█▒/ ▒▓░ █<░▒ ▓/░>",
+        speed: 100
+      });
+      text.start();
+      text.reveal(4000);
+    </script>
   </body>
 </html>
